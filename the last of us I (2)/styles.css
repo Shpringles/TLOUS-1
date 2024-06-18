@@ -1,0 +1,122 @@
+body {
+    font-family: "creepster", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #997f7f;
+}
+
+header {
+    background-color: #333;
+    color: rgb(180, 150, 150);
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid black;
+    width: 100%;
+    animation: typing 4s steps(50, end) forwards, blink-caret .75s step-end infinite;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(157, 179, 147);
+    text-decoration: none;
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: rgb(180, 182, 148);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #998383;
+    color: rgb(228, 212, 212);
+}
+
+.gallery img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-form label {
+    margin-top: 10px;
+}
+
+#comment-form input,
+#comment-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#comment-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: rgb(184, 163, 163);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button:hover {
+    background-color: #555;
+}
+
+#comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid rgb(180, 182, 148);
+    padding: 10px 0;
+}
+
+.comment h4 {
+    margin: 0;
+}
+
+.comment p {
+    margin: 5px 0 0 0;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(219, 124, 124); }
+}
